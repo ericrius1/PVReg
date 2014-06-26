@@ -1,0 +1,9 @@
+{
+  "firebase": "pvretreats",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}
