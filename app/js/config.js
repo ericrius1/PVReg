@@ -6,7 +6,7 @@ angular.module('registrationApp.config', [])
 app.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider
-      .when('/',        { templateUrl: 'views/default.html' })
+      .when('/',        { templateUrl: 'views/register.html' })
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
       .when('/admin/rooms',  { templateUrl: 'views/admin/rooms/list.html', authRequired: true })

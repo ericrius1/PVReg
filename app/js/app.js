@@ -7,5 +7,6 @@ var app = angular.module('registrationApp',
   , 'registrationApp.controllers.signin'
   , 'registrationApp.controllers.signup'
   , 'registrationApp.controllers.rooms'
+  , 'registrationApp.controllers.registration'
   , 'firebase', 'ui.bootstrap', 'ngRoute']
   )
