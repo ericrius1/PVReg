@@ -4,8 +4,6 @@ angular.module('registrationApp.controllers.registration', ['registrationApp.ser
   .controller('RegistrationController', ['$scope', '$routeParams', 'Rooms',
     function($scope, $routeParams, Rooms){
       $scope.rooms = Rooms;
-      $scope.sexModel = {
-        female: true,
-        male: false
-      }
+      $scope.room  = {};
+      $scope.sexModel = "Female"
     }])

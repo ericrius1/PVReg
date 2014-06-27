@@ -1,6 +1,15 @@
-<div ng-controller="RegistrationController">Please fill out the following information
+<div ng-controller="RegistrationController">
+
   <div class="btn-group">
-    <label class="btn btn-primary" ng-model="sexModel.female" btn-checkbox>Female</label>
-    <label class="btn btn-primary" ng-model="sexModel.male" btn-checkbox>Male</label>
+    <label class="btn btn-primary" ng-model="sexModel" btn-radio="'Female'">Female</label>
+    <label class="btn btn-primary" ng-model="sexModel" btn-radio="'Male'">Male</label>
   </div>
+
+  <ui-select ng-model="room.selected" theme="bootstrap">
+    <ui-select-match placeholder="Select a room">{{$select.selected.name}}</ui-select-match>
+    <ui-select-choices repeat="room in rooms">
+      <div ng-bind-html="room.name"></div>
+    </ui-select-choices>
+  </ui-select>
+
 </div>
